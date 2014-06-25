@@ -1,169 +1,400 @@
 <div class="sheet-header">Personal Attributes:</div>
-<div class="sheet-3colrow">
-    <div class="sheet-col">
-        <label>Name:<input type="text" name="attr_character_name" /></label>
-        <label>Class:<input type="text" name="attr_Class" /></label>
-        <label>Alignment:<input type="text" name="attr_Alignment" /></label>
-        <label>Race:<input type="text" name="attr_Race" /></label>
-        <label>Multi-Class:<input type="text" name="attr_SecondClass" /></label>
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <label>Player:<input type="text" name="attr_player_name" /></label>
+            <label>Character:<input type="text" name="attr_character_name" /></label>
+            <label>Alignment:<input type="text" name="attr_Alignment" /></label>
+            <label>Class(es):<input type="text" name="attr_Class" /></label>
+            <label>Race:<input type="text" name="attr_Race" /></label>
+        </div>
+        <div class="sheet-col">
+            <label>Full HP:<input type="number" name="attr_fullHitPoints"/></label>
+            <label>Current HP:<input type="number" name="attr_currentHitPoints"/></label>
+            <label>Attacks Per Round: <input type="text" name="attr_apr" style="width:20%"/></label>
+            <label>AC:<input type="number" name="attr_ArmorClass" /></label>
+            <label>Level(s):<input type="text" name="attr_Level" /></label>
+            <label>XP:<input type="number" name="attr_XP"/></label>
+        </div>
+        <div class="sheet-col">
+            <label>Age:<input type="number" name="attr_Age"/></label>
+            <label>Gender:<input type="text" name="attr_Sex" /></label>
+            <label>Height:<input type="text" name="attr_Height" /></label>
+            <label>Weight:<input type="text" name="attr_Weight" /></label>
+            <label>Languages:<input type="text" name="attr_Movement" /></label>
+        </div>
     </div>
-    <div class="sheet-col">
-        <label>XP:<input type="number" name="attr_XP"/></label>
-        <label>HP:<input type="number" name="attr_HitPoints"/></label>
-        <label>AC:<input type="number" name="attr_ArmorClass" /></label>
-        <label>Level:<input type="text" name="attr_Level" /></label>
-        <label>Multi-Class:<input type="text" name="attr_ThirdClass" /></label>
+    
+    <div class="sheet-header">Personal Attributes:</div>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Str:<input type="number" name="attr_Strength" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Hit Prob:</span><input type="text" name="attr_MeleeBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Dam Adj:</span><input type="text" name="attr_DmgBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Bend<br />Bars:</span><input type="text" name="attr_MajorStrengthFeat" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Open<br />Doors:</span><input type="text" name="attr_MinorStrengthFeat" /></label></div>
     </div>
-    <div class="sheet-col">
-        <label>Age:<input type="number" name="attr_Age"/></label>
-        <label>Height:<input type="text" name="attr_Height" /></label>
-        <label>Weight:<input type="text" name="attr_Weight" /></label>
-        <label>Sex:<input type="text" name="attr_Sex" /></label>
-        <label>Movement:<input type="text" name="attr_Movement" /></label>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Int:<input type="number" name="attr_Intelligence" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Max<br/>Lang:</span><input type="text" name="attr_BonusLanguages" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Know<br/>Spell:</span><input type="text" name="attr_knowSpell" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Min<br/>Spell:</span><input type="text" name="attr_minSpell" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Max<br/>Spell:</span><input type="text" name="attr_maxSpell" /></label></div>
+        <div class="sheet-col sheet-span4">&#x0020;</div>
     </div>
-</div>
-
-<div class="sheet-header">Personal Attributes:</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Str:<input type="number" name="attr_Strength" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">To Hit:</span><input type="text" name="attr_MeleeBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Dmg:</span><input type="text" name="attr_DmgBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Enc:</span><input type="text" name="attr_EncumbranceBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Open<br />Doors:</span><input type="text" name="attr_MinorStrengthFeat" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Bend<br />Bars:</span><input type="text" name="attr_MajorStrengthFeat" /></label></div>
-</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Int:<input type="number" name="attr_Intelligence" /></label></div>
-    <div class="sheet-col"><label><span class="small">Add.<br/>Lang:<input type="text" name="attr_BonusLanguages" /></label></div>
-    <div class="sheet-col sheet-span4">&nbsp;</div>
-</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Wis:<input type="number" name="attr_Wisdom" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Mental<br/>Save:</span><input type="text" name="attr_MentalSaveBonus" /></label></div>
-    <div class="sheet-col sheet-span4">&nbsp;</div>
-</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Dex:<input type="number" name="attr_dexterity" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Surprise:</span><input type="text" name="attr_SurpriseBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">Missile<br/>Hit:</span><input type="text" name="attr_RangedBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">AC:</span><input type="text" name="attr_ArmorBonus" /></label></div>
-    <div class="sheet-col sheet-span2">&nbsp;</div>
-</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Con:<input type="number" name="attr_constitution" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">HP<br/>Bonus:</span><input type="text" name="attr_HitPointBonus" /></label></div>
-    <div class="sheet-col"><label><span class="sheet-small">System<br/>Shock:</span><input type="text" name="attr_SystemShock" /></label></div>
-    <div class="sheet-col"><label><span class="small">Res.<br/>Survive:</span><input type="text" name="attr_ResurrectionSurvival" /></label></div>
-    <div class="sheet-col sheet-span2">&nbsp;</div>
-</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col"><label>Cha:<input type="number" name="attr_Charisma" /></label></div>
-    <div class="sheet-col"><label><span class="small">Max<br />Hench.:</span><input type="text" name="attr_MaximumHenchmen" /></label></div>
-    <div class="sheet-col"><label><span class="small">Loyalty:</span><input type="text" name="attr_LoyaltyBonus" /></label></div>
-    <div class="sheet-col"><label><span class="small">React:</span><input type="text" name="attr_ReactionBonus" /></label></div>
-    <div class="sheet-col sheet-span2">&nbsp;</div>
-</div>
-
-<div class="sheet-header">Saves</div>
-<table class="saves">
-<tr>
-    <th>Rods, Staves, and Wands</th>
-    <th>Breath Weapon</th>
-    <th>Paralysis, Poison, and Death</th>
-    <th>Petrification, Polymorph</th>
-    <th>Spells</th>
-</tr>
-<tr>
-    <td><input type="number" name="attr_SaveRodsStavesWands" /> <button type="roll" value="/roll 1d20&gt;@{SaveRodsStavesWands}" name="roll_SaveRodsStavesWands">Roll</button></td>
-    <td><input type="number" name="attr_SaveBreathWeapons" /> <button type="roll" value="/roll 1d20&gt;@{SaveBreathWeapons}" name="roll_SaveBreathWeapons">Roll</button></td>
-    <td><input type="number" name="attr_SaveParalysisPoisonDeath" /> <button type="roll" value="/roll 1d20&gt;@{SaveParalysisPoisonDeath}" name="roll_SaveParalysisPoisonDeath">Roll</button></td>
-    <td><input type="number" name="attr_SavePetrificationPolymorph" /> <button type="roll" value="/roll 1d20&gt;@{SavePetrificationPolymorph}" name="roll_SavePetrificationPolymorph">Roll</button></td>
-    <td><input type="number" name="attr_SaveSpells" /> <button type="roll" value="/roll 1d20&gt;@{SaveSpells}" name="roll_SaveSpells">Roll</button></td>
-</tr>
-</table>
-
-<div class="sheet-header">Weapons</div>
-<div class="sheet-6colrow">
-    <div class="sheet-col sheet-header">Weapon</div>
-    <div class="sheet-col sheet-header">Damage vs S-M</div>
-    <div class="sheet-col sheet-header">Damage vs L</div>
-    <div class="sheet-col sheet-header">Rate of Fire</div>
-    <div class="sheet-col sheet-header">Range</div>
-    <div class="sheet-col sheet-header">Encumbrance</div>
-</div>
-<fieldset class="repeating_weapon">
-<div class="sheet-6colrow">
-    <div class="sheet-col"><input type="text" name="attr_WeaponName" /></div>
-    <div class="sheet-col"><input type="text" name="attr_DamageSmallMedium" /></div>
-    <div class="sheet-col"><input type="text" name="attr_DamageLarge" /></div>
-    <div class="sheet-col"><input type="text" name="attr_RateOfFire" /></div>
-    <div class="sheet-col"><input type="text" name="attr_Range" /></div>
-    <div class="sheet-col"><input type="text" name="attr_Encumbrance" /></div>
-</div>
-</fieldset>
-<div class="sheet-header">To Hit Armor Class:</div>
-<table>
-<tr>
-    <th>-10</th>
-    <th>-9</th>
-    <th>-8</th>
-    <th>-7</th>
-    <th>-6</th>
-    <th>-5</th>
-    <th>-4</th>
-    <th>-3</th>
-    <th>-2</th>
-    <th>-1</th>
-    <th>0</th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    <th>7</th>
-    <th>8</th>
-    <th>9</th>
-    <th>10</th>
-</tr>
-<tr>
-    <td><input type="number" name="attr_THAC-10" /></td>
-    <td><input type="number" name="attr_THAC-9" /></td>
-    <td><input type="number" name="attr_THAC-8" /></td>
-    <td><input type="number" name="attr_THAC-7" /></td>
-    <td><input type="number" name="attr_THAC-6" /></td>
-    <td><input type="number" name="attr_THAC-5" /></td>
-    <td><input type="number" name="attr_THAC-4" /></td>
-    <td><input type="number" name="attr_THAC-3" /></td>
-    <td><input type="number" name="attr_THAC-2" /></td>
-    <td><input type="number" name="attr_THAC-1" /></td>
-    <td><input type="number" name="attr_THAC0" /></td>
-    <td><input type="number" name="attr_THAC1" /></td>
-    <td><input type="number" name="attr_THAC2" /></td>
-    <td><input type="number" name="attr_THAC3" /></td>
-    <td><input type="number" name="attr_THAC4" /></td>
-    <td><input type="number" name="attr_THAC5" /></td>
-    <td><input type="number" name="attr_THAC6" /></td>
-    <td><input type="number" name="attr_THAC7" /></td>
-    <td><input type="number" name="attr_THAC8" /></td>
-    <td><input type="number" name="attr_THAC9" /></td>
-    <td><input type="number" name="attr_THAC10" /></td>
-</tr>
-</table>
-<div class="sheet-header">Thief Skills:</div>
-<div class="sheet-3colrow sheet-thief">
-    <div class="sheet-col">
-        <label>Climb Walls: <input type="number" name="attr_ClimbWalls" /></label>
-        <label>Hide in Shadows: <input type="number" name="attr_HideInShadows" /></label>
-        <label>Pick Pockets: <input type="number" name="attr_PickPockets" /></label>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Wis:<input type="number" name="attr_Wisdom" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Mag Attack<br/>Adj:</span><input type="text" name="attr_MentalSaveBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Spell<br/>Bonus:</span><input type="text" name="attr_spellBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Spell<br/>Failure:</span><input type="text" name="attr_spellFailure" /></label></div>
+        <div class="sheet-col sheet-span4">&#x0020;</div>
     </div>
-    <div class="sheet-col">
-        <label>Find Traps: <input type="number" name="attr_FindTraps" /></label>
-        <label>Move Quietly: <input type="number" name="attr_MoveQuietly" /></label>
-        <label>Read Languages: <input type="number" name="attr_ReadLanguages" /></label>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Dex:<input type="number" name="attr_dexterity" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">React/Missile<br/>Adj:</span><input type="text" name="attr_RangedBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">Defense<br/>Adj:</span><input type="text" name="attr_ArmorBonus" /></label></div>
+        <div class="sheet-col sheet-span2">&#x0020;</div>
     </div>
-    <div class="sheet-col">
-        <label>Hear Noise: <input type="number" name="attr_HearNoise" /></label>
-        <label>Open Locks: <input type="number" name="attr_OpenLocks" /></label>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Con:<input type="number" name="attr_constitution" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">HP<br/>Adj:</span><input type="text" name="attr_HitPointBonus" /></label></div>
+        <div class="sheet-col"><label><span class="sheet-small">System<br/>Shock:</span><input type="text" name="attr_SystemShock" /></label></div>
+        <div class="sheet-col"><label><span class="small">Res.<br/>Survive:</span><input type="text" name="attr_ResurrectionSurvival" /></label></div>
+        <div class="sheet-col sheet-span2">&#x0020;</div>
     </div>
-</div>
+    <div class="sheet-6colrow">
+        <div class="sheet-col"><label>Cha:<input type="number" name="attr_Charisma" /></label></div>
+        <div class="sheet-col"><label><span class="small">Max<br />Hench.:</span><input type="text" name="attr_MaximumHenchmen" /></label></div>
+        <div class="sheet-col"><label><span class="small">Loyalty<br/>Base:</span><input type="text" name="attr_LoyaltyBonus" /></label></div>
+        <div class="sheet-col"><label><span class="small">React<br/>Adj:</span><input type="text" name="attr_ReactionBonus" /></label></div>
+        <div class="sheet-col sheet-span2">&#x0020;</div>
+    </div>
+    
+    <div class="sheet-header">Saves</div>
+    <table class="saves">
+        <tr>
+            <th>Rods, Staves, and Wands</th>
+            <th>Breath Weapon</th>
+            <th>Paralysis, Poison, and Death</th>
+            <th>Petrification, Polymorph</th>
+            <th>Spells</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_SaveRodsStavesWands" /> <button type="roll" value="/roll 1d20&gt;@{SaveRodsStavesWands}" name="roll_SaveRodsStavesWands">Roll</button></td>
+            <td><input type="number" name="attr_SaveBreathWeapons" /> <button type="roll" value="/roll 1d20&gt;@{SaveBreathWeapons}" name="roll_SaveBreathWeapons">Roll</button></td>
+            <td><input type="number" name="attr_SaveParalysisPoisonDeath" /> <button type="roll" value="/roll 1d20&gt;@{SaveParalysisPoisonDeath}" name="roll_SaveParalysisPoisonDeath">Roll</button></td>
+            <td><input type="number" name="attr_SavePetrificationPolymorph" /> <button type="roll" value="/roll 1d20&gt;@{SavePetrificationPolymorph}" name="roll_SavePetrificationPolymorph">Roll</button></td>
+            <td><input type="number" name="attr_SaveSpells" /> <button type="roll" value="/roll 1d20&gt;@{SaveSpells}" name="roll_SaveSpells">Roll</button></td>
+        </tr>
+    </table>
+    
+    <div class="sheet-header">Weapons</div>
+    <table class="weapons">
+        <tr>
+            <th class="weapon" style="width:27%">Weapon</th>
+            <th class="damage" style="width:8%">Dam S/M</th>
+            <th class="damage" style="width:8%">Dam L</th>
+            <th class="acAdj" style="width:4%">AC 2</th>
+            <th class="acAdj" style="width:4%">AC 3</th>
+            <th class="acAdj" style="width:4%">AC 4</th>
+            <th class="acAdj" style="width:4%">AC 5</th>
+            <th class="acAdj" style="width:4%">AC 6</th>
+            <th class="acAdj" style="width:4%">AC 7</th>
+            <th class="acAdj" style="width:4%">AC 8</th>
+            <th class="acAdj" style="width:4%">AC 9</th>
+            <th class="acAdj" style="width:4%">AC 10</th>
+            <th class="rof" style="width:7%">Rate of Fire</th>
+            <th class="range" style="width:5%">Range M (-2)</th>
+            <th class="range" style="width:5%">Range L (-5)</th>
+        </tr>
+        <tr>
+            <td class="weapon"><input type="text" name="attr_WeaponName" /></td>
+            <td class="damage"><input type="text" name="attr_DamageSmallMedium" /></td>
+            <td class="damage"><input type="text" name="attr_DamageLarge" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac2" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac3" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac4" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac5" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac6" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac7" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac8" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac9" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac10" /></td>
+            <td class="rof"><input type="text" name="attr_RateOfFire" /></td>
+            <td class="range"><input type="text" name="attr_medRange" /></td>
+            <td class="range"><input type="text" name="attr_lngRange" /></td>
+        </tr>
+        <tr>
+            <td class="weapon"><input type="text" name="attr_WeaponName" /></td>
+            <td class="damage"><input type="text" name="attr_DamageSmallMedium" /></td>
+            <td class="damage"><input type="text" name="attr_DamageLarge" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac2" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac3" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac4" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac5" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac6" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac7" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac8" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac9" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac10" /></td>
+            <td class="rof"><input type="text" name="attr_RateOfFire" /></td>
+            <td class="range"><input type="text" name="attr_medRange" /></td>
+            <td class="range"><input type="text" name="attr_lngRange" /></td>
+        </tr>
+        <tr>
+            <td class="weapon"><input type="text" name="attr_WeaponName" /></td>
+            <td class="damage"><input type="text" name="attr_DamageSmallMedium" /></td>
+            <td class="damage"><input type="text" name="attr_DamageLarge" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac2" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac3" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac4" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac5" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac6" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac7" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac8" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac9" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac10" /></td>
+            <td class="rof"><input type="text" name="attr_RateOfFire" /></td>
+            <td class="range"><input type="text" name="attr_medRange" /></td>
+            <td class="range"><input type="text" name="attr_lngRange" /></td>
+        </tr>
+        <tr>
+            <td class="weapon"><input type="text" name="attr_WeaponName" /></td>
+            <td class="damage"><input type="text" name="attr_DamageSmallMedium" /></td>
+            <td class="damage"><input type="text" name="attr_DamageLarge" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac2" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac3" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac4" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac5" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac6" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac7" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac8" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac9" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac10" /></td>
+            <td class="rof"><input type="text" name="attr_RateOfFire" /></td>
+            <td class="range"><input type="text" name="attr_medRange" /></td>
+            <td class="range"><input type="text" name="attr_lngRange" /></td>
+        </tr>
+        <tr>
+            <td class="weapon"><input type="text" name="attr_WeaponName" /></td>
+            <td class="damage"><input type="text" name="attr_DamageSmallMedium" /></td>
+            <td class="damage"><input type="text" name="attr_DamageLarge" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac2" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac3" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac4" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac5" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac6" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac7" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac8" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac9" /></td>
+            <td class="acAdj"><input type="text" name="attr_ac10" /></td>
+            <td class="rof"><input type="text" name="attr_RateOfFire" /></td>
+            <td class="range"><input type="text" name="attr_medRange" /></td>
+            <td class="range"><input type="text" name="attr_lngRange" /></td>
+        </tr>
+    </table>
+    
+    <div class="sheet-header">To Hit Armor Class:</div>
+    <table class="weapons">
+        <tr>
+            <th style="width:5%">-10</th>
+            <th style="width:5%">-9</th>
+            <th style="width:5%">-8</th>
+            <th style="width:5%">-7</th>
+            <th style="width:5%">-6</th>
+            <th style="width:5%">-5</th>
+            <th style="width:5%">-4</th>
+            <th style="width:5%">-3</th>
+            <th style="width:4%">-2</th>
+            <th style="width:4%">-1</th>
+            <th style="width:4%">0</th>
+            <th style="width:4%">1</th>
+            <th style="width:4%">2</th>
+            <th style="width:5%">3</th>
+            <th style="width:5%">4</th>
+            <th style="width:5%">5</th>
+            <th style="width:5%">6</th>
+            <th style="width:5%">7</th>
+            <th style="width:5%">8</th>
+            <th style="width:5%">9</th>
+            <th style="width:5%">10</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="attr_THAC-10" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-9" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-8" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-7" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-6" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-5" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-4" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-3" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-2" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC-1" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC0" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC1" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC2" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC3" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC4" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC5" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC6" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC7" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC8" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC9" style="width:100%" /></td>
+            <td><input type="number" name="attr_THAC10" style="width:100%" /></td>
+        </tr>
+    </table>
+    
+    <div class="sheet-header">Thief Skills:</div>
+    <div class="sheet-3colrow sheet-thief">
+        <div class="sheet-col">
+            <label>Climb Walls: <input type="number" name="attr_ClimbWalls" /></label>
+            <label>Hide in Shadows: <input type="number" name="attr_HideInShadows" /></label>
+            <label>Pick Pockets: <input type="number" name="attr_PickPockets" /></label>
+        </div>
+        <div class="sheet-col">
+            <label>Find Traps: <input type="number" name="attr_FindTraps" /></label>
+            <label>Move Quietly: <input type="number" name="attr_MoveQuietly" /></label>
+            <label>Read Languages: <input type="number" name="attr_ReadLanguages" /></label>
+        </div>
+        <div class="sheet-col">
+            <label>Hear Noise: <input type="number" name="attr_HearNoise" /></label>
+            <label>Open Locks: <input type="number" name="attr_OpenLocks" /></label>
+        </div>
+    </div>
+    
+    <div class="sheet-header">Spells Per Day:</div>
+    <table>
+        <tr>
+        <th style="width:5%">Level</th>
+        <th style="width:5%">1</th>
+        <th style="width:5%">2</th>
+        <th style="width:5%">3</th>
+        <th style="width:5%">4</th>
+        <th style="width:5%">5</th>
+        <th style="width:5%">6</th>
+        <th style="width:5%">7</th>
+        <th style="width:5%">8</th>
+        <th style="width:5%">9</th>
+        </tr>
+        <tr>
+            <th>Base</th>
+            <td><input type="number" name="bspLvl1" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl2" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl3" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl4" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl5" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl6" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl7" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl8" style="width:100%" /></td>
+            <td><input type="number" name="bspLvl9" style="width:100%" /></td>
+        </tr>
+        <tr>
+            <th>Bonus</th>
+            <td><input type="number" name="bospLvl1" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl2" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl3" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl4" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl5" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl6" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl7" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl8" style="width:100%" /></td>
+            <td><input type="number" name="bospLvl9" style="width:100%" /></td>
+        </tr>
+        <tr>
+            <th>Overall</th>
+            <td><input type="number" name="spLvl1" style="width:100%" /></td>
+            <td><input type="number" name="spLvl2" style="width:100%" /></td>
+            <td><input type="number" name="spLvl3" style="width:100%" /></td>
+            <td><input type="number" name="spLvl4" style="width:100%" /></td>
+            <td><input type="number" name="spLvl5" style="width:100%" /></td>
+            <td><input type="number" name="spLvl6" style="width:100%" /></td>
+            <td><input type="number" name="spLvl7" style="width:100%" /></td>
+            <td><input type="number" name="spLvl8" style="width:100%" /></td>
+            <td><input type="number" name="spLvl9" style="width:100%" /></td>
+        </tr>
+    </table>
+    
+    <div class="sheet-header">Quick Inventory (# of Slots equals 1/2 Dexterity Rounded Down)/Immediately Accessible</div>
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <label><input type="text" name="quickinv01" /></label>
+            <label><input type="text" name="quickinv02" /></label>
+            <label><input type="text" name="quickinv03" /></label>
+            <label><input type="text" name="quickinv04" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="quickinv05" /></label>
+            <label><input type="text" name="quickinv06" /></label>
+            <label><input type="text" name="quickinv07" /></label>
+            <label><input type="text" name="quickinv08" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="quickinv09" /></label>
+            <label><input type="text" name="quickinv10" /></label>
+            <label><input type="text" name="quickinv11" /></label>
+            <label><input type="text" name="quickinv12" /></label>
+        </div>
+    </div>
+    
+    <div class="sheet-header">Backpack Storage (# of Slots equals Strength; d6 Rnds to Access / 2d6 Carefully)</div>
+    <ul>
+        <li>1-5 Extra Items is halfway encumbered (75% MV); 6-10 fully encumbered (50% MV); 11-15 over-encumbered (25% MV; no actions)</li>
+        <li>Bundles: 3 items that fit in one hand (sling stones); Packs: 10 items fit in one hand (arrows)</li>
+        <li>Huge items (Pole-arms, etc.) equal 2 slots; armor slots equals protection bonus</li>
+        <li>100 Coins equals 1 item</li>
+    </ul>
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <label><input type="text" name="inv01" /></label>
+            <label><input type="text" name="inv02" /></label>
+            <label><input type="text" name="inv03" /></label>
+            <label><input type="text" name="inv04" /></label>
+            <label><input type="text" name="inv05" /></label>
+            <label><input type="text" name="inv06" /></label>
+            <label><input type="text" name="inv07" /></label>
+            <label><input type="text" name="inv08" /></label>
+            <label><input type="text" name="inv09" /></label>
+            <label><input type="text" name="inv10" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="inv11" /></label>
+            <label><input type="text" name="inv12" /></label>
+            <label><input type="text" name="inv13" /></label>
+            <label><input type="text" name="inv14" /></label>
+            <label><input type="text" name="inv15" /></label>
+            <label><input type="text" name="inv16" /></label>
+            <label><input type="text" name="inv17" /></label>
+            <label><input type="text" name="inv18" /></label>
+            <label><input type="text" name="inv19" /></label>
+            <label><input type="text" name="inv20" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="inv21" /></label>
+            <label><input type="text" name="inv22" /></label>
+            <label><input type="text" name="inv23" /></label>
+            <label><input type="text" name="inv24" /></label>
+            <label><input type="text" name="inv25" /></label>
+            <label><input type="text" name="inv26" /></label>
+            <label><input type="text" name="inv27" /></label>
+            <label><input type="text" name="inv28" /></label>
+            <label><input type="text" name="inv29" /></label>
+            <label><input type="text" name="inv30" /></label>
+        </div>
+    </div>
+    
+    <div class="sheet-header">Worn Items (Clothes, jewelry, etc.)</div>
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <label><input type="text" name="cl01" /></label>
+            <label><input type="text" name="cl02" /></label>
+            <label><input type="text" name="vl03" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="cl04" /></label>
+            <label><input type="text" name="cl05" /></label>
+            <label><input type="text" name="cl06" /></label>
+        </div>
+        <div class="sheet-col">
+            <label><input type="text" name="cl07" /></label>
+            <label><input type="text" name="cl08" /></label>
+            <label><input type="text" name="cl09" /></label>
+        </div>
+    </div>
