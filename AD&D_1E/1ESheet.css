@@ -3,7 +3,7 @@
 .sheet-col label span.sheet-small {font-size:50%;}
 .sheet-col input {width:60%;}
 .sheet-thief .sheet-col input {width:20%;}
-.sheet-header {font-weight: bold;margin-top:7px;}
+.sheet-header {font-size: 20px;font-weight: bold;margin-top:20px;margin-bottom:3px;}
 .sheet-col.sheet-header{margin-top:0;}
 
 .sheet-6colrow {display:block;}
@@ -14,5 +14,6 @@
 .sheet-6colrow .sheet-col.sheet-span5 {width:calc(83.33% - 180px);float:none;}
 .sheet-6colrow :last-child {margin-right: 0;}
 
-
 table {width:100%;}
+tr {width:100%;}
+input {width:100%;}
